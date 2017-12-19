@@ -1,5 +1,13 @@
 <?php
-
+function mima(){
+	$user=array('doungy','10230614');
+	if(!($user[0]===$_SERVER['PHP_AUTH_USER'] && $user[1]===$_SERVER['PHP_AUTH_PW'])){
+		header('WWW-Authenticate: Basic realm="doungy.tk"');
+		header('HTTP/1.0 401 Unauthorized');
+		die("please login");
+	}
+}
+mima();
 define('H5AI_VERSION', '0.29.0');
 define('MIN_PHP_VERSION', '5.5.0');
 
