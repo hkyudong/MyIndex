@@ -43,8 +43,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			</div>
 			
-			<div class="navbar-collapse collapse">
-				
+			<div class="navbar-collapse collapse">				
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="./index.html">Home</a></li>
 					<li><a href="./404.html">About</a></li>
@@ -65,4 +64,25 @@
 	</nav>
 </header>
 <div id="zzsc"><canvas id="canvas" width="920" height="400"></canvas></div>
+<footer>
+	<style type="text/css">
+	.audio_center {
+			position: absolute;
+			left: 50%;
+			-ms-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%); 
+		}
+	</style>
+	<div id="footer_audio" class="audio_center">
+		<audio controls="controls" autoplay="autoplay" loop="loop" id="IndexMusic">
+		  <source src="./music/Two Steps From Hell - Star Sky.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+	</div>
+	<script>
+		document.getElementById("IndexMusic").volume = 0.05;
+	</script>
+</footer>
 </body></html>
